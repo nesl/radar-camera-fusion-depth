@@ -10,10 +10,10 @@ If you use this work, please cite our paper:
 
 ```
 @inproceedings{singh2023depth,
-  title={Depth Estimation from Camera Image and mmWave Radar Point Cloud},
-  author={Singh, Akash Deep and Ba, Yunhao and Sarker, Ankur and Zhang, Howard Chenyang and Kadambi, Achuta and Soatta, Stefano and Srivastava, Mani and Wong, Alex},
+  title={Depth Estimation From Camera Image and mmWave Radar Point Cloud},
+  author={Singh, Akash Deep and Ba, Yunhao and Sarker, Ankur and Zhang, Howard and Kadambi, Achuta and Soatto, Stefano and Srivastava, Mani and Wong, Alex},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={1--10},
+  pages={9275--9285},
   year={2023}
 }
 ``` 
