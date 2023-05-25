@@ -4,7 +4,7 @@ Pytorch implementation of Depth Estimation from Camera Image and mmWave Radar Po
 
 CVPR 2023
 
-Model have been tested on Ubuntu 20.04 using Python 3.8, Pytorch 1.10.2+cu113
+Models have been tested on Ubuntu 20.04 using Python 3.8, Pytorch 1.10.2+cu113
 
 If you use this work, please cite our paper:
 
