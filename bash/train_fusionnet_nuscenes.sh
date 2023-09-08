@@ -39,7 +39,7 @@ python src/train_fusionnet.py \
 --weight_initializer kaiming_uniform \
 --activation_func leaky_relu \
 --learning_rates 1e-3 \
---learning_schedule 200 \
+--learning_schedule 450 \
 --loss_func l1 \
 --w_smoothness 0.0 \
 --w_lidar_loss 2.0 \

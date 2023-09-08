@@ -126,7 +126,7 @@ with torch.no_grad():
             panoptic_seg_filtered = torch.isin(panoptic_seg.to("cpu"),get_id_from_category_id(segments_info))
             panoptic_seg_filtered = panoptic_seg_filtered.numpy()
             
-            path_seg = os.path.join('data/nuscenes_derived/semantic_segmentation', camera_token + '.npy')
+            path_seg = os.path.join(save_panoptic_masks_dir, camera_token + '.npy')
             np.save(path_seg, panoptic_seg_filtered)            
             print('compute segmentation %d/%d, scene number: %d' % ( scene_idx, 850, current_scene_count ) )
             camera_token = camera_data['next']                
