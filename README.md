@@ -46,6 +46,7 @@ Then run the following bash script to generate the preprocessed dataset for trai
 
 ```
 bash setup_dataset_nuscenes.sh
+bash setup_dataset_nuscenes_test.sh
 ```
 
 This will generate the training dataset in a folder called `data/nuscenes_derived`
