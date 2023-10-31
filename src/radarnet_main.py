@@ -967,15 +967,39 @@ def run(restore_path,
             else:
                 image, radar_points = data
 
-            [image], [radar_points] = transforms.transform(
+            bounding_boxes_list = []
+
+            pad_size_x = patch_size[1] // 2
+            radar_points = radar_points.squeeze(dim=0)
+
+            if radar_points.ndim == 1:
+                # Expand to 1 x 3
+                radar_points = np.expand_dims(radar_points, axis=0)
+
+            # get the shifted radar points after padding
+            for radar_point_idx in range(0,radar_points.shape[0]):
+                # Set radar point to the center of the patch
+                radar_points[radar_point_idx,0] = radar_points[radar_point_idx,0] + pad_size_x
+                bounding_box = torch.zeros(4)
+                bounding_box[0] = radar_points[radar_point_idx,0] - pad_size_x
+                bounding_box[1] = 0
+                bounding_box[2] = radar_points[radar_point_idx,0] + pad_size_x
+                bounding_box[3] = image.shape[-2]
+                bounding_boxes_list.append(bounding_box)
+
+            bounding_boxes_list = [torch.stack(bounding_boxes_list, dim=0)]
+
+            [image], [radar_points], [bounding_boxes_list] = transforms.transform(
                 images_arr=[image],
                 points_arr=[radar_points],
+                bounding_boxes_arr=[bounding_boxes_list],
                 random_transform_probability=0.0)
 
             output_depth, output_response = forward(
                 model=radarnet_model,
                 image=image,
                 radar_points=radar_points,
+                bounding_boxes_list=bounding_boxes_list,
                 device=device)
 
             output_depth = np.squeeze(output_depth.cpu().numpy())
