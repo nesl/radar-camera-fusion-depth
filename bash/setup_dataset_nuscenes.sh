@@ -7,4 +7,4 @@ python setup/setup_dataset_nuscenes_with_denseGT.py \
 --n_forward_frames_to_reproject 80 \
 --n_backward_frames_to_reproject 80 \
 --n_thread 40 \
---panoptic_seg_dir /home/akash/Documents/Radar-camera-depth-completion_mask/data/nuscenes_derived/panoptic_segmentation_masks \
+--panoptic_seg_dir data/nuscenes_derived/panoptic_segmentation_masks \
