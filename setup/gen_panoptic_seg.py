@@ -64,6 +64,10 @@ predictor = DefaultPredictor(cfg)
 
 save_panoptic_masks_dir = 'data/nuscenes_derived/panoptic_segmentation_masks'
 
+# create dir if not exists
+if not os.path.exists(save_panoptic_masks_dir):
+    os.makedirs(save_panoptic_masks_dir)
+
 def get_id_from_category_id(segments_info):
     '''Returns a list of all output ids to filter. Output Ids 0-8 are moving objects in COCO'
     Input:
