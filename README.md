@@ -84,10 +84,10 @@ tensorboard --logdir trained_fusionnet/<model_name>
 
 ## Downloading our pre-trained models
 
-Our [pretrained models](https://drive.google.com/drive/folders/1uVhpnX7A-xz73w_8ZBfeGgit4hGpuKcN?usp=sharing) are available here for download:
+Our [pretrained models](https://drive.google.com/drive/folders/1ZG-2UG67VcYhWTyHdUzTHIzdfCpsG_1Q?usp=sharing) are available here for download:
 
 ```
-https://drive.google.com/drive/folders/1uVhpnX7A-xz73w_8ZBfeGgit4hGpuKcN?usp=sharing
+[https://drive.google.com/drive/folders/1uVhpnX7A-xz73w_8ZBfeGgit4hGpuKcN?usp=sharing](https://drive.google.com/drive/folders/1ZG-2UG67VcYhWTyHdUzTHIzdfCpsG_1Q?usp=sharing)
 ```
 
 ## Evaluating our models
@@ -102,4 +102,4 @@ You may replace the restore_path and output_path arguments to evaluate your own 
 
 ## License and disclaimer 
 
-This software is property of the UC Regents, and is provided free of charge for research purposes only. It comes with no warranties, expressed or implied, according to [these terms and conditions](https://github.com/thecyclone/Radar-camera-depth-completion_mask/blob/master/license). For commercial use, please contact [UCLA TDG](https://tdg.ucla.edu/).
+This software is property of the UC Regents, and is provided free of charge for research purposes only. It comes with no warranties, expressed or implied, according to [these terms and conditions](https://github.com/nesl/radar-camera-fusion-depth/blob/main/license). For commercial use, please contact [UCLA TDG](https://tdg.ucla.edu/).
