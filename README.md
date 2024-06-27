@@ -87,7 +87,7 @@ tensorboard --logdir trained_fusionnet/<model_name>
 Our [pretrained models](https://drive.google.com/drive/folders/1ZG-2UG67VcYhWTyHdUzTHIzdfCpsG_1Q?usp=sharing) are available here for download:
 
 ```
-[https://drive.google.com/drive/folders/1uVhpnX7A-xz73w_8ZBfeGgit4hGpuKcN?usp=sharing](https://drive.google.com/drive/folders/1ZG-2UG67VcYhWTyHdUzTHIzdfCpsG_1Q?usp=sharing)
+https://drive.google.com/drive/folders/1ZG-2UG67VcYhWTyHdUzTHIzdfCpsG_1Q?usp=sharing
 ```
 
 ## Evaluating our models
